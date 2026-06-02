@@ -1,8 +1,6 @@
 # ai-powered-keyboard-configurator
 
-=======
-
-# ⌨️ KeyForge — AI Keyboard Configurator
+# ⌨️ KeyForge — AI Keyboard Configurator--V1
 
 A next-gen e-commerce product configurator with a real-time 3D mechanical keyboard model, AI specialist chatbot (Max), and live configuration mutations.
 
@@ -14,6 +12,7 @@ A next-gen e-commerce product configurator with a real-time 3D mechanical keyboa
 - **@react-spring/three** — smooth part swap animations
 - **Zustand** — global config + chat state
 - **MISTRAL API** — AI specialist with tool use
+-      **User your desired LLM**
 
 ## Setup
 
@@ -23,13 +22,11 @@ npm install
 
 # 2. Add your Anthropic API key
 cp .env.example .env
-# Edit .env and paste your key: VITE_ANTHROPIC_KEY=sk-ant-...
+# Edit .env and paste your key:
 
 # 3. Start dev server
 npm run dev
 ```
-
-## Features
 
 ### 3D Scene
 
@@ -41,19 +38,18 @@ npm run dev
 
 ### AI Chatbot
 
-- Powered by claude-sonnet-4-20250514 with streaming
 - Has access to the full parts catalog and compatibility rules
 - **Tool use**: can apply parts directly to your 3D model
 - **Tool use**: can toggle exploded view
 - **Tool use**: can highlight specific parts
-- Compatibility analysis on demand
+- Compatibility analysis on demand-- Currently In Process
 
 ### Configurator
 
 - 5 categories: Case, Switches, Keycaps, PCB, Plate
 - Real-time compatibility checking with error/warning display
-- Live pricing summary
 - Color swatches per part
+- Live pricing summary -- Currently In Process
 
 ## Project Structure
 
@@ -83,5 +79,4 @@ The current scene uses procedurally generated geometry. To upgrade to real GLTF 
 ```bash
 npm i -g vercel
 vercel --prod
-# Set VITE_ANTHROPIC_KEY as an environment variable in Vercel dashboard
 ```
