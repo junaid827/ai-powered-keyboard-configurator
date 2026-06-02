@@ -1,4 +1,4 @@
-# ai-powered-keyboard-configurator
+# AI-powered-keyboard-configurator
 
 # ⌨️ KeyForge — AI Keyboard Configurator--V1
 
